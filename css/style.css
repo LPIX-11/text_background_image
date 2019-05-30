@@ -1,0 +1,39 @@
+/**
+ * @author Mohamed Johnson
+ * May 30th, 2019
+ * Feel Free to modify ^_^
+ */
+
+/** Assigning an almost perfect white color to the background */
+body {
+  background-color: #FFFBF9;
+}
+
+/** Building our text styling */
+.text {
+  /** Changing the text's font */
+  font-family: Montserrat, sans-serif;
+  font-size: 200px;
+  text-align: center;
+
+  /** Defining the image in the background's properties **/
+  background-image: url('../img/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  /** Defining text depth */
+  text-shadow: horizontal-offset vertical-offset blur color;
+  /** text-shadow: 6px 6px 5px rgba(0,0,0,0.2); */
+
+  /** Using webkits to make the text color transparent and the background image display behind the text only */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/** Little animation on text hover */
+.text:hover {
+  /** Changing depth on mouse hover */
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+
+}
